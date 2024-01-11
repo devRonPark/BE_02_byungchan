@@ -1,0 +1,81 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>input 외 입력태그</title>
+  </head>
+  <body>
+    <header>
+      <h1>설문조사 양식</h1>
+      <p>모든 항목에 빠짐없이 체크해주십시오</p>
+    </header>
+    <hr />
+    <main>
+      <form action="" method="post">
+        <fieldset>
+          <legend>개인정보</legend>
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" />
+          <br />
+          <label for="email">이메일 주소</label>
+          <input type="email" id="email" name="email" />
+        </fieldset>
+        <fieldset>
+          <legend>설문</legend>
+          <div>
+            <p>연령대가 어떻게 되십니까?</p>
+            <input type="radio" name="age" id="ten" />
+            <label for="ten">10대</label>
+            <input type="radio" name="age" id="twenty" />
+            <label for="twenty">20대</label>
+            <input type="radio" name="age" id="thirty" />
+            <label for="thirty">30대</label>
+            <input type="radio" name="age" id="forty" />
+            <label for="forty">40대</label>
+            <input type="radio" name="age" id="fifty" />
+            <label for="fifty">50대</label>
+            <input type="radio" name="age" id="other" />
+            <label for="other">그 외</label>
+          </div>
+          <div>
+            <p>
+              학원을 선택할 때 가장 중요하게 생각하는 것은 무엇입니까? 모두
+              고르시오
+            </p>
+            <input type="checkbox" name="academy" id="position" />
+            <label for="position">위치</label>
+            <input type="checkbox" name="academy" id="pay" />
+            <label for="pay">학원비</label>
+            <input type="checkbox" name="academy" id="teacher" />
+            <label for="teacher">강사</label>
+            <input type="checkbox" name="academy" id="facility" />
+            <label for="facility">시설</label>
+          </div>
+          <div>
+            <p>하루 평균 수면 시간은 몇 시간인가요?</p>
+            <input type="radio" name="sleep" id="less" />
+            <label for="less">4시간 미만</label>
+            <input type="radio" name="sleep" id="four" />
+            <label for="four">4시간 이상</label>
+            <input type="radio" name="sleep" id="five" />
+            <label for="five">5시간 이상</label>
+            <input type="radio" name="sleep" id="six" />
+            <label for="six">6시간 이상</label>
+            <input type="radio" name="sleep" id="seven" />
+            <label for="seven">7시간 이상</label>
+            <input type="radio" name="sleep" id="eight" />
+            <label for="eight">8시간 이상</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>기타의견</legend>
+          <textarea name="opinion" id="opinion" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input type="submit" value="제출" />
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <p>입력하시느라 수고하셨습니다.</p>
+    </footer>
+  </body>
+</html>
