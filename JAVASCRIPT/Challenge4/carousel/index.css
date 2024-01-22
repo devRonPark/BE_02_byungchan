@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 30px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.carousel-wrapper {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden의 대상은 해당 요소의 width, padding 까지 */
+  overflow: hidden;
+}
+
+.carousel-wrapper > .carousel {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.2s;
+}
+
+.carousel-wrapper > .carousel > img {
+  width: 500px;
+  height: 400px;
+}
+
+button {
+  cursor: pointer;
+  width: 5vw;
+  height: 5vw;
+  border: 2.5w solid;
+  border-color: black transparent transparent black;
+  background: transparent;
+}
+
+#prevBtn {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  transform: rotate(-45deg);
+}
+
+#nextBtn {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  transform: rotate(135deg);
+}
