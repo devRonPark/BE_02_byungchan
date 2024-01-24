@@ -1,12 +1,11 @@
-eventName = { click: "click" };
-colorName = { white: "white", black: "black" };
+const eventName = { click: "click" };
+const colorName = { white: "white", black: "black" };
 
 function loadBtnEvent() {
-  whiteBtn = document.getElementById(colorName.white);
-  blackBtn = document.getElementById(colorName.black);
+  const whiteBtn = document.getElementById(colorName.white);
+  const blackBtn = document.getElementById(colorName.black);
 
   function changeBgColor(event, colorName) {
-    console.log("clicked");
     document.body.style.backgroundColor = colorName;
   }
 
