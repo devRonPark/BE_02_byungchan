@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="signup-wrapper">
+      <h1>OZ초격차 회원가입</h1>
+      <form method="post">
+        <input type="text" name="name" id="name" />
+        <label for="name" hidden>이름</label>
+        <input type="email" name="email" id="email" />
+        <label for="email" hidden>이메일</label>
+        <input type="password" name="pwd" id="pwd" />
+        <label for="pwd" hidden>비밀번호</label>
+        <input type="password" name="pwd-check" id="pwd-check" />
+        <label for="pwd-check" hidden>비밀번호 확인</label>
+        <fieldset>
+          <input type="radio" name="gender" id="woman" value="woman" />
+          <label for="woman">여성</label>
+          <input type="radio" name="gender" id="man" value="man" />
+          <label for="man">남성</label>
+        </fieldset>
+        <button type="submit" id="signUp">가입하기</button>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
